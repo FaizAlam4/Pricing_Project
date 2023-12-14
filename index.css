@@ -114,6 +114,8 @@ span {
   font-size: 40px;
   display: inline-block;
   height: 30px;
+  position: relative;
+  bottom: 6px;
 
 }
 
@@ -126,7 +128,6 @@ span {
 }
 
 .tag {
-  background-color: blue;
   color: rgb(232, 226, 226);
   font-weight: bold;
   font-size: small;
@@ -136,6 +137,7 @@ span {
   background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%))
 }
 
+
 .item:hover{
  
   background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
@@ -144,4 +146,9 @@ span {
 
 .item:hover *{
   color:white;
+}
+.item:hover > .card > .tag
+{
+  background: rgb(255, 255, 255);
+  color: rgb(160, 160, 237)
 }
