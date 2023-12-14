@@ -11,9 +11,12 @@
       href="./images/favicon-32x32.png"
     />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <title>Pricing component</title>
 
     <link rel="stylesheet" href="./index.css" />
@@ -22,13 +25,15 @@
     <h1 class="head">Our Pricing</h1>
     <div class="switch">
       Annually
-      <input type="checkbox" id="mySwitch" />
+      <input type="checkbox" id="mySwitch" value="" />
       <label for="mySwitch" id="mswitch"></label>
       Monthly
     </div>
     <div class="container">
       <div class="item">
-        <p style="text-align: center; color: #61605d; margin-top:30px;"><b>Basic</b></p>
+        <p style="text-align: center; color: #61605d; margin-top: 30px">
+          <b>Basic</b>
+        </p>
         <div class="card">
           <div class="item2 price"><span>$</span>199.99</div>
           <div class="item2">500 GB Storage</div>
@@ -38,7 +43,9 @@
         </div>
       </div>
       <div class="item">
-        <p style="text-align: center; color: #61605d; margin-top:30px;"><b>Professional</b></p>
+        <p style="text-align: center; color: #61605d; margin-top: 30px">
+          <b>Professional</b>
+        </p>
         <div class="card">
           <div class="item2 price"><span>$</span>249.99</div>
           <div class="item2">1 TB Storage</div>
@@ -48,7 +55,9 @@
         </div>
       </div>
       <div class="item">
-        <p style="text-align: center; color: #61605d;margin-top:30px;"><b>Master</b></p>
+        <p style="text-align: center; color: #61605d; margin-top: 30px">
+          <b>Master</b>
+        </p>
         <div class="card">
           <div class="item2 price"><span>$</span>399.99</div>
           <div class="item2">2 TB Storage</div>
@@ -58,5 +67,35 @@
         </div>
       </div>
     </div>
+
+    <script>
+      let monthlyIncome = document.querySelector("#mySwitch");
+      console.log(monthlyIncome);
+      flag = false;
+      monthlyIncome.onclick = () => {
+        flag = !flag;
+        if (flag) {
+          document.querySelector(
+            ".container .item:nth-child(1) .card>.price"
+          ).innerText = "$19.99";
+          document.querySelector(
+            ".container .item:nth-child(2) .card>.price"
+          ).innerText = "$24.99";
+          document.querySelector(
+            ".container .item:nth-child(3) .card>.price"
+          ).innerText = "$39.99";
+        } else {
+          document.querySelector(
+            ".container .item:nth-child(1) .card>.price"
+          ).innerText = "$199.99";
+          document.querySelector(
+            ".container .item:nth-child(2) .card>.price"
+          ).innerText = "$249.99";
+          document.querySelector(
+            ".container .item:nth-child(3) .card>.price"
+          ).innerText = "$399.99";
+        }
+      };
+    </script>
   </body>
 </html>

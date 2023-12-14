@@ -1,11 +1,4 @@
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
 
 * {
   letter-spacing: 1px;
@@ -45,7 +38,7 @@ body {
   position: relative;
   background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   width: 50px;
-  height: 26px;
+  height: 22px;
   border-radius: 45px;
   margin: 0px 30px;
   position: relative;
