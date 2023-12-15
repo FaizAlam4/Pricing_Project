@@ -40,7 +40,7 @@ body {
   border-radius: 45px;
   margin: 0px 30px;
   position: relative;
-  top: 8px;
+  top: 5px;
 }
 
 
@@ -66,17 +66,15 @@ body {
   width: 90%;
   justify-content: center;
   align-items: center;
-  margin: 50px auto;
+  margin: 60px auto;
 }
 
 .item {
-  width: 28%;
+  min-width: 26%;
   min-height: 450px;
-  /* border: 2px solid black; */
   background-color: white;
-  margin: 1px;
+  margin: 5px;
   border-radius: 10px;
-  /* box-shadow:2px 2px 0px #666666; */
   box-shadow: 0 0 10px 10px rgba(224, 218, 218, 0.074);
 
 }
@@ -84,6 +82,8 @@ body {
 ul {
   list-style: none;
   padding-left: 0;
+  width: 100%;
+  margin: auto;
 }
 
 
@@ -113,7 +113,7 @@ span {
 
 .price {
   text-align: center;
-  font-size: 60px;
+  font-size:46px;
   font-weight: bold;
   color: #555452;
   padding-bottom: 20px;
@@ -123,9 +123,11 @@ span {
   color: rgb(232, 226, 226);
   font-weight: bold;
   font-size: small;
-  padding-top: 18px;
-  border-radius: 5px;
-  margin-top: 2rem;
+  padding-top: 21px;
+  border-radius: 10px;
+  margin-top: 2.8rem;
+  display: block;
+  border: 0px;
   background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%))
 }
 
