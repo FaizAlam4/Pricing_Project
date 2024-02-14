@@ -49,4 +49,4 @@ As mentioned above, there are a number of ways to host your project for free. We
 3. Once connected, every time you `git push`, ZEIT Now will create a new [deployment](https://zeit.co/docs/v2/platform/deployments) and the deployment URL will be shown on your [ZEIT Dashboard](https://zeit.co/dashboard). You will also receive an email for each deployment with the URL.
 
 
-**Have fun building!** 🚀
+**Have fun while building!** 🚀
